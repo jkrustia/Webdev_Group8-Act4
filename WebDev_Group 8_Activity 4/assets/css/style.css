@@ -1,0 +1,176 @@
+/* Fonts: Open Sans and Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --primary-color: #5C1C1C; /* deep burgundy */
+    --secondary-color: #F8F1E5; /* warm beige */
+    --accent-color: #D4AF37; /* gold */
+    --neutral-color: #333333; /* charcoal */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--secondary-color);
+    color: var(--neutral-color);
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+    color: var(--primary-color);
+}
+
+/* contact & form—lagyan ko ganto para masmadali ma-identify kung para san*/
+.contact-header {
+    background-image: url('/assets/images/contact/contact_header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-header h1 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+
+
+.contact-header h1 {
+    text-align: center;
+}
+
+
+.contact-bg {
+    background-color: var(--secondary-color);
+    color: var(--neutral-color);
+}
+
+.cont-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-deets {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.contact-deets img {
+    height: 20px;
+    padding-right: 10px;
+}
+
+.contact-deets p {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    line-height: 2.2;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.contact-deets img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact-form {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid var(--neutral-color);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--secondary-color);
+    color: var(--neutral-color);
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.contact-map {
+    flex: 1;
+    padding: 50px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+}
+/* contact & form */
+
+@media (max-width: 768px) {
+/* contact & form */
+    .cont-contact {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-map {
+        padding: 20px 0;
+    }
+
+    .contact-map iframe {
+        height: 350px;
+    }
+/* contact & form */
+}
