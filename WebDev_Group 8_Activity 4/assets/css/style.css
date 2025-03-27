@@ -177,3 +177,219 @@ h4, h5, h6 {
     }
 /* contact & form */
 }
+
+/* Start: About Page */
+.about-page {
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    color: var(--neutral-color);
+    background-color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+.about-page-header {
+    background-image: url('assets/images/about/restaurant-facade');
+    background-size: cover;
+    background-position: center;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.about-page-header h1 {
+    font-family: var(--font-title);
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-page-header p {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.about-page-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.about-page-section {
+    margin-bottom: 3rem;
+}
+
+.about-page-section h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.about-page-section p {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+/* HISTORY SECTION */
+.about-page-history,
+.about-page-mission {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-left: 4px solid var(--accent-color);
+}
+
+.about-page-history h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.about-page-history p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify; /* Improves paragraph alignment */
+}
+
+.about-page-content-wrapper {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.about-page-history-image {
+    float: left; /* Allows text to wrap around the image */
+    width: 40%; /* Adjust image width */
+    margin: 0 1rem 1rem 0; /* Adds spacing around the image */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-page-history-image.right {
+    float: right; /* Positions image to the right */
+    margin: 0 0 1rem 1rem;
+}
+
+.about-page-history-image img {
+    width: 100%;
+    border-radius: 10px; /* Makes image corners slightly rounded */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* TEAM SECTION */
+.about-page-team {
+    text-align: left;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+}
+
+.about-page-team h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about-page-team p {
+    font-size: 1.2rem;
+    color: var(--neutral-color);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+
+.about-page-image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+.about-page-image-item {
+    flex: 1 1 calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.about-page-image-item:hover {
+    transform: translateY(-5px);
+}
+
+
+.about-page-image-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+}
+
+
+.about-page-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.3rem;
+}
+
+
+.about-page-description {
+    font-size: 1rem;
+    color: var(--neutral-color);
+    line-height: 1.6;
+}
+/*footer*/
+.about-page-footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.about-page-footer p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .about-page-history {
+        padding: 1.5rem;
+    }
+    
+    .about-page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-page-history p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .about-page-section h2 {
+        font-size: 2rem;
+    }
+
+    .about-page-history-image {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .about-page-content-wrapper {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .about-page-image-item {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+    }
+}
+/* End: About Page */
