@@ -393,3 +393,193 @@ h4, h5, h6 {
     }
 }
 /* End: About Page */
+
+
+/* Start: Gallery Page */
+.food-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    padding: 50px;
+    border-bottom: 2px solid transparent; 
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); 
+    border-image-slice: 1; 
+    margin-bottom: 20px;
+}
+
+.food-item img {
+    max-width: 100%;
+}
+
+.food-item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.menu-button {
+    background-color: #5C1C1C;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.gallery-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-gallery {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+}
+
+.image-gallery img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.image-gallery img.active {
+    opacity: 1;
+}
+
+.gallery-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+@media (max-width: 650px) {
+    .food-item {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto; 
+        text-align: center;
+    }
+
+    .food-item-text {
+        padding-left: 0;
+    }
+
+    .image-grid {
+        grid-row: 2; 
+    }
+
+    .menu-button {
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    .dot {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #bbb;
+        border-radius: 50%;
+        margin: 2px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+}
+
+.venue {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto;
+    gap: 20px; 
+    padding: 50px;
+}
+
+.venue-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 100%;
+    
+}
+
+.venue-images img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#Dining-Area {
+    transform-origin: left;
+}
+
+#Interior {
+    transform-origin: center;
+}
+
+#Dining-Table {
+    transform-origin: right;
+}
+
+.venue-images img:hover {
+    transform: scale(1.2); 
+}
+
+.venue-text {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.inquire-button {
+    background-color: #5C1C1C;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+@media (max-width: 650px) {
+    .venue-text {
+        text-align: center;
+    }
+
+    .inquire-button {
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    .venue-images img {
+        transform-origin: left; 
+    }
+
+    .venue-images img:hover {
+        transform: scale(2.2); 
+    }
+}
+/* End: Gallery Page */
