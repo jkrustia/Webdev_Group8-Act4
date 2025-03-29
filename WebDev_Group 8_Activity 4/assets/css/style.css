@@ -194,7 +194,7 @@ h4, h5, h6 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: #ffffff; /* Ensure light text for contrast */
+    color: #ffffff; 
     text-align: center;
     padding: 5rem 1rem;
     position: relative;
