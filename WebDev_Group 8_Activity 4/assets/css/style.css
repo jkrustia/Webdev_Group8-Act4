@@ -452,6 +452,11 @@ h4, h5, h6 {
     margin-top: 20px;
     align-self: flex-start;
 }
+.menu-button:hover {
+    background-color: var(--accent-color); /* Slightly lighter red for hover effect */
+    transform: scale(1.05); /* Adds a subtle zoom effect */
+    cursor: pointer; /* Changes cursor to indicate interactivity */
+}
 
 .gallery-container {
     position: relative;
@@ -586,6 +591,11 @@ h4, h5, h6 {
     border-radius: 5px;
     margin-top: 20px;
     align-self: flex-start;
+}
+.inquire-button:hover {
+    background-color: var(--accent-color); /* Slightly lighter red for hover effect */
+    transform: scale(1.05); /* Adds a subtle zoom effect */
+    cursor: pointer; /* Changes cursor to indicate interactivity */
 }
 
 @media (max-width: 650px) {
