@@ -315,6 +315,24 @@ nav ul li a:hover {
     }
 }
 
+.contact-us-button {
+    background-color: #D4AF37;
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-us-button:hover {
+    background-color: #B8892F;
+    transform: scale(1.05);
+}
+
 /*===================================================================================== */
 
 /* Carousel Container */
