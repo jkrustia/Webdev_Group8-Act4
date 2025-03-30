@@ -7,19 +7,28 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" href="assets/images/menu/logo.png">
 </head>
-
 <body>
-
+    <header class="menu-header">
+        <nav class="header-container">
+            <div class="logo">
+                <img src="./assets/images/home/namnam.png" alt="Logo"> 
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html"> Gallery </a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="menu-nav">
         <button onclick="location.href='#breakfast'">Breakfast</button>
         <button onclick="location.href='#snacks'">Snacks</button>
         <button onclick="location.href='#lunch-dinner'">Lunch & Dinner</button>
         <button onclick="location.href='#desserts-beverages'">Desserts & Beverages</button>
     </div>
-
     <div class="menu-container">
-        
-
         <div class="menu-category" id="breakfast">
             <h2>Breakfast</h2>
             <div class="menu-items">
@@ -28,7 +37,7 @@
                     <h3>Arroz Caldo</h3>
                     <h4>₱220</h4>
                     <p class="description">A Filipino chicken and rice porridge, known for its rich chicken broth,
-                         shredded chicken, and topped with chicharon and other toppings. </p>
+                    shredded chicken, and topped with chicharon and other toppings. </p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -64,7 +73,7 @@
                     <h3>Daing na Bangsilog</h3>
                     <h4>₱285</h4>
                     <p class="description">A Filipino breakfast dish featuring fried milkfish (bangus), served with 
-                        fried or scrambled egg, tomatoes, and onions, with a choice of garlic, white, or brown rice.</p>
+                    fried or scrambled egg, tomatoes, and onions, with a choice of garlic, white, or brown rice.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -72,7 +81,7 @@
                     <h3>Sugar Glazed Corned Beef Belly Silog</h3>
                     <h4>₱328</h4>
                     <p class="description">A Filipino dish featuring a unique take on corned beef belly, served with 
-                        fried or scrambled egg, tomatoes, and onions, with a choice of garlic, white, or brown rice.</p>
+                    fried or scrambled egg, tomatoes, and onions, with a choice of garlic, white, or brown rice.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -94,7 +103,7 @@
                     <h3>Three Cheese Ensaymada</h3>
                     <h4>₱295</h4>
                     <p class="description">A soft, buttery, brioche-like bread, topped with a mix of cheeses, including 
-                        kesong puti, parmesan, and local cheddar, and delicately torched for an added depth of flavor.</p>
+                    kesong puti, parmesan, and local cheddar, and delicately torched for an added depth of flavor.</p>
                 </div>
 
             </div>
@@ -109,7 +118,7 @@
                     <h3>Tokwa't Baboy</h3>
                     <h4>₱160</h4>
                     <p class="description">Crispy deep-fried tofu and tender pork belly, 
-                        served with a flavorful dipping sauce of vinegar, soy sauce, garlic, and chili.</p>
+                    served with a flavorful dipping sauce of vinegar, soy sauce, garlic, and chili.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -117,7 +126,7 @@
                     <h3>Dinuguan with Puto</h3>
                     <h4>₱298</h4>
                     <p class="description">A savory Filipino pork blood stew, is often enjoyed with puto
-                         creating a unique sweet and savory combination. </p>
+                    creating a unique sweet and savory combination. </p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -125,7 +134,7 @@
                     <h3>Fresh Lumpiang Ubod</h3>
                     <h4>₱95</h4>
                     <p class="description">A Filipino fresh spring roll featuring a filling of palm heart, ground pork, 
-                        and shrimp, wrapped in a thin crepe, and served with a house sauce and crushed peanuts.</p>
+                    and shrimp, wrapped in a thin crepe, and served with a house sauce and crushed peanuts.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -133,7 +142,7 @@
                     <h3>Lumpiang Bicol Express</h3>
                     <h4>₱145</h4>
                     <p class="description">Bicol Express, served in a lumpia format, featuring a spicy 
-                        and savory filling of pork and chicharon, wrapped in a crispy, fried spring roll wrapper.</p>
+                    and savory filling of pork and chicharon, wrapped in a crispy, fried spring roll wrapper.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -141,7 +150,7 @@
                     <h3>Crunchy Salt & Pepper Squid</h3>
                     <h4>₱195</h4>
                     <p class="description">A deep-fried squid dish coated in a flavorful salt and pepper mixture, 
-                        resulting in a crispy and savory treat.</p>
+                    resulting in a crispy and savory treat.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -150,7 +159,7 @@
                     <h4>₱190</h4>
                     <p class="description">Chicken wings marinated in spices, fried until crispy and golden brown, and 
                         then coated in a flavorful glaze made with palm oil, brown sugar, fish sauce, honey, 
-                        garlic, and siling labuyo.</p>
+                    garlic, and siling labuyo.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -158,7 +167,7 @@
                     <h3>Crispy Pancit Palabok</h3>
                     <h4>₱265</h4>
                     <p class="description">A modern twist on the classic Filipino noodle dish, featuring crispy noodles 
-                        topped with a savory shrimp sauce, hard-boiled eggs, chicharrón, and green onions.</p>
+                    topped with a savory shrimp sauce, hard-boiled eggs, chicharrón, and green onions.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -166,7 +175,7 @@
                     <h3>Pancit Canton</h3>
                     <h4>₱195</h4>
                     <p class="description">A Filipino stir-fried noodle dish featuring a combination of meats, vegetables,
-                         and seafood, all cooked in a savory sauce.</p>
+                    and seafood, all cooked in a savory sauce.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -174,7 +183,7 @@
                     <h3>Pancit Lomi</h3>
                     <h4>₱235</h4>
                     <p class="description">A Filipino noodle soup with thick, chewy wheat flour noodles in a savory 
-                        broth with meat, vegetables, and sometimes seafood, seasoned with garlic, onions, and soy sauce.</p>
+                    broth with meat, vegetables, and sometimes seafood, seasoned with garlic, onions, and soy sauce.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -182,7 +191,7 @@
                     <h3>Pancit Bihon</h3>
                     <h4>₱210</h4>
                     <p class="description">A thin, stir-fried rice noodles with a mix of tender 
-                        meat, and crisp vegetables, all in a flavorful sauce.</p>
+                    meat, and crisp vegetables, all in a flavorful sauce.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -190,7 +199,7 @@
                     <h3>Pancit Sisig</h3>
                     <h4>₱260</h4>
                     <p class="description">A fusion dish combining the classic Filipino noodle dish pancit with the popular sisig, 
-                        offering a unique and flavorful experience.</p>
+                    offering a unique and flavorful experience.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -212,7 +221,7 @@
                     <h3>Crispy Beef Tadyang</h3>
                     <h4>₱398</h4>
                     <p class="description">A Filipino dish made with beef ribs that are first braised or 
-                        boiled until tender, then deep-fried until crispy.</p>
+                    boiled until tender, then deep-fried until crispy.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -220,7 +229,7 @@
                     <h3>Crispy Pork Kawali</h3>
                     <h4>₱185</h4>
                     <p class="description">A Filipino dish featuring pork belly that is marinated and deep-fried until 
-                        it becomes crispy and golden brown, often served with a dipping sauce like soy sauce or vinegar.</p>
+                    it becomes crispy and golden brown, often served with a dipping sauce like soy sauce or vinegar.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -228,7 +237,7 @@
                     <h3>Crispy Sisig</h3>
                     <h4>₱185</h4>
                     <p class="description">A popular Filipino dish made with ground pork, onions, and chili peppers, 
-                        cooked until crispy and served with a side of egg and vinegar.</p>
+                    cooked until crispy and served with a side of egg and vinegar.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -236,7 +245,7 @@
                     <h3>Crispy Pata with Garlic-Chili Bits</h3>
                     <h4>₱339</h4>
                     <p class="description">A popular Filipino dish featuring deep-fried pork knuckles with a side of 
-                        garlic-chili bits for an extra kick of flavor.</p>
+                    garlic-chili bits for an extra kick of flavor.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -251,7 +260,7 @@
                     <h3>Overloaded Garlicky Chicken and Pork Belly</h3>
                     <h4>₱259</h4>
                     <p class="description">Chicken and pork belly, cooked with a generous amount of garlic, likely 
-                        sauteed until golden brown, creating a flavorful and fragrant sauce that coats the meat.</p>
+                    sauteed until golden brown, creating a flavorful and fragrant sauce that coats the meat.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -259,7 +268,7 @@
                     <h3>Lamb Adobo</h3>
                     <h4>₱329</h4>
                     <p class="description">A tender lamb meat in a flavorful sauce of vinegar, soy sauce, 
-                        garlic, and peppercorns, typically served with rice.</p>
+                    garlic, and peppercorns, typically served with rice.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -267,7 +276,7 @@
                     <h3>Camaron Rebosado</h3>
                     <h4>₱238</h4>
                     <p class="description">A fried, crispy on the outside and juicy on the inside, 
-                        seafood dish, best enjoyed with a dash of their sweet and sour sauce.</p>
+                    seafood dish, best enjoyed with a dash of their sweet and sour sauce.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -289,7 +298,7 @@
                     <h3>Sinigang na Salmon Head sa Japanese Miso and Guyabano</h3>
                     <h4>₱280</h4>
                     <p class="description">A creative twist on the Filipino classic, blending Japanese 
-                        miso and guyabano with salmon head for a unique and flavorful sour soup.</p>
+                    miso and guyabano with salmon head for a unique and flavorful sour soup.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -298,7 +307,7 @@
                     <h4>₱285</h4>
                     <p class="description">A unique and flavorful Filipino dish featuring tender beef short ribs 
                         simmered in a tangy and sour broth, often made with tamarind, and served alongside a refreshing 
-                        slice of watermelon.</p>
+                    slice of watermelon.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -306,7 +315,7 @@
                     <h3>Laksa-style Halaan Soup</h3>
                     <h4>₱228</h4>
                     <p class="description">A fusion dish that blends Filipino and Singaporean flavors, featuring a rich, 
-                        spiced coconut milk soup base with clams and vegetables.</p>
+                    spiced coconut milk soup base with clams and vegetables.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -314,7 +323,7 @@
                     <h3>Sizzling Corned Beef Belly Kansi</h3>
                     <h4>₱315</h4>
                     <p class="description">A combination of rich, savory flavors of corned beef with the tangy and 
-                        sour notes of a traditional Filipino kansi soup, all served sizzling hot on a plate.</p>
+                    sour notes of a traditional Filipino kansi soup, all served sizzling hot on a plate.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -329,7 +338,7 @@
                     <h3>Overloaded Garlic Bangus Belly</h3>
                     <h4>₱218</h4>
                     <p class="description">A dish that features milkfish belly (bangus) cooked with a generous amount 
-                        of garlic. This dish is a popular choice for its savory and garlicky taste.</p>
+                    of garlic. This dish is a popular choice for its savory and garlicky taste.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -338,7 +347,7 @@
                     <h4>₱265</h4>
                     <p class="description">A Filipino grilled squid dish, where the squid is often marinated in a tangy 
                         soy-calamansi mixture with garlic and spices, then grilled over charcoal to achieve a smoky, 
-                        char-grilled flavor, and served with a dipping sauce.</p>
+                    char-grilled flavor, and served with a dipping sauce.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -360,7 +369,7 @@
                     <h3>Bibingkang Galapong of Salted Duck Egg</h3>
                     <h4>₱118</h4>
                     <p class="description">A traditional Filipino dessert made with ground rice (galapong), featuring sliced salted duck eggs and topped with shredded coconut, 
-                        cooked over coals in a banana leaf-lined terra cotta bowl.</p>
+                    cooked over coals in a banana leaf-lined terra cotta bowl.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -368,7 +377,7 @@
                     <h3>Puto Bumbong with Muscovado Butter</h3>
                     <h4>₱109</h4>
                     <p class="description">A traditional Filipino steamed rice cake made with purple glutinous rice 
-                        with the addition of muscovado butter, adding a rich and flavorful touch to this classic dessert.</p>
+                    with the addition of muscovado butter, adding a rich and flavorful touch to this classic dessert.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -376,7 +385,7 @@
                     <h3>Bibingkang Ube</h3>
                     <h4>₱159</h4>
                     <p class="description">A Filipino baked rice cake made with ube (purple yam), giving it a vibrant 
-                        color and a slightly sweet, earthy flavor.</p>
+                    color and a slightly sweet, earthy flavor.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -398,7 +407,7 @@
                     <h3>Kesong Puti & Mango Turon</h3>
                     <h4>₱180</h4>
                     <p class="description">A Filipino dessert featuring deep-fried banana and mango rolls with white 
-                        cheese, often served with ice cream.</p>
+                    cheese, often served with ice cream.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -406,7 +415,7 @@
                     <h3>Gata Leche Flan</h3>
                     <h4>₱128</h4>
                     <p class="description">A Filipino dessert featuring a rich, silky-smooth custard made with coconut milk, a heavier version of 
-                        the Spanish crème caramel, and topped with a layer of caramel syrup.</p>
+                    the Spanish crème caramel, and topped with a layer of caramel syrup.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -414,7 +423,7 @@
                     <h3>Halo-Halo</h3>
                     <h4>₱185</h4>
                     <p class="description">A popular Filipino dessert featuring crushed ice, evaporated milk, and a 
-                        mix of ingredients like ube jam, sweetened kidney beans, coconut strips, and sago.</p>
+                    mix of ingredients like ube jam, sweetened kidney beans, coconut strips, and sago.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -422,7 +431,7 @@
                     <h3>Guinumis</h3>
                     <h4>₱175</h4>
                     <p class="description">A refreshing Filipino shaved ice dessert with red gulaman, sago, coconut 
-                        cream, and toasted pinipig.</p>
+                    cream, and toasted pinipig.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -430,7 +439,7 @@
                     <h3>Ube + Sago</h3>
                     <h4>₱150</h4>
                     <p class="description">A popular Filipino dessert drink featuring a creamy, sweet, and refreshing 
-                        purple yam (ube) shake with chewy tapioca pearls (sago).</p>
+                    purple yam (ube) shake with chewy tapioca pearls (sago).</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -438,7 +447,7 @@
                     <h3>Mango + Pomelo + Sago</h3>
                     <h4>₱160</h4>
                     <p class="description">A refreshing and creamy treat featuring diced mango, pomelo, sago pearls, and
-                         coconut milk, often enjoyed as a sweet soup or drink.</p>
+                    coconut milk, often enjoyed as a sweet soup or drink.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -446,7 +455,7 @@
                     <h3>Buko + Pandan + Sago</h3>
                     <h4>₱160</h4>
                     <p class="description">A refreshing Filipino dessert drink that combines the sweetness of buko 
-                        with the fragrant pandan flavor and chewy sago pearls.</p>
+                    with the fragrant pandan flavor and chewy sago pearls.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -454,7 +463,7 @@
                     <h3>Strawberry + Camias</h3>
                     <h4>₱185</h4>
                     <p class="description">A refreshing dessert drink that combines the sweetness of strawberries 
-                        with the tartness of camias creating a balanced and flavorful beverage.</p>
+                    with the tartness of camias creating a balanced and flavorful beverage.</p>
                 </div>
 
                 <div class="menu-item" onclick="toggleDescription(this)">
@@ -462,20 +471,18 @@
                     <h3>Hot Tsokolate</h3>
                     <h4>₱105</h4>
                     <p class="description">A Filipino-style hot chocolate, creamy, and decadent drink made with tablea 
-                        cacao, and milk.</p>
+                    cacao, and milk.</p>
                 </div>
-
             </div>
         </div>
-
-
     </div>
-
+    <footer class="about-page-footer">
+        <p>&copy; namnam 2025. All rights reserved. | Designed with passion for Filipino cuisine.</p>
+    </footer>
     <script>
         function toggleDescription(element) {
             element.classList.toggle("active");
         }
     </script>
-
 </body>
 </html>
