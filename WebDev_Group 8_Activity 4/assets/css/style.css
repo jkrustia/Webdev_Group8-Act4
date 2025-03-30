@@ -847,7 +847,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     background: linear-gradient(#00000066, #00000080),
-        url('./assets/Hero.png') no-repeat center / cover;
+        url('../images/home/Hero.png') no-repeat center / cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -948,7 +948,7 @@ nav ul li a:hover {
 /* About Us Section */
 .about {
     background-color: #F8F1E5;
-    background-image: url('./assets/pattern.png');
+    background-image: url('../images/home/pattern.png');
     background-size: contain;
     background-repeat: repeat;
     display: flex;
@@ -1176,7 +1176,7 @@ nav ul li a:hover {
 /* Contact Section */
 .contact {
     background-color: #F8F1E5;
-    background-image: url('./assets/pattern.png');
+    background-image: url('../images/home/pattern.png');
     background-size: contain;
     background-repeat: repeat;
     padding: 80px 20px;
